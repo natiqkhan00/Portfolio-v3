@@ -1,2 +1,6 @@
 export { default as Intro } from './Intro/Intro'
-export { default as Switch } from './Switch/Switch'
+export { default as Background } from './Background/Background'
+export { default as Skills } from './Skills/Skills'
+export { default as Experience } from './Experience/Experience'
+export { default as FeaturedProjects } from './FeaturedProjects/FeaturedProjects'
+export { default as OtherProjects } from './OtherProjects/OtherProjects'

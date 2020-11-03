@@ -38,15 +38,17 @@ export const IntroContact = styled.h3`
 `
 
 export const ContactLink = styled.a`
-    transition: all .4s ease-in-out;
+    transition: all .3s ease-in-out;
     font-weight: 400;
     text-decoration: none;
     display: inline-block;
     padding: 2px 3px;
     text-decoration: none;
     box-shadow: inset 0 -3px 0 #007bff;
+    color: #444452;
 
     &:hover {
-        box-shadow: inset 0 -70px 0 #007bff;
+        box-shadow: inset 0 -30px 0 #007bff;
+        color: #fff;
     }
 `

@@ -21,7 +21,7 @@ const shake = keyframes`
 export const Span = styled.span`
 
     &:hover {
-        animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both;
+        animation: ${shake} 0.82s cubic-bezier(.36,.07,.19,.97) both;
         transform: translate3d(0, 0, 0);
         backface-visibility: hidden;
         perspective: 1000px;
