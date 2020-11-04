@@ -1,13 +1,12 @@
-import React, { useState } from 'react'
+import React from 'react'
 import DarkModeToggle from 'react-dark-mode-toggle';
 
-const Switch = () => {
-    const [isDarkMode, setIsDarkMode] = useState(false);
+const Switch = ({ darkMode, setDarkMode }) => {
 
     return (
         <DarkModeToggle
-            onChange={setIsDarkMode}
-            checked={isDarkMode}
+            onChange={setDarkMode}
+            checked={darkMode}
             size={40}
         />
     )

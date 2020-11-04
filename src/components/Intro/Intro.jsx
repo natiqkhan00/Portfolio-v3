@@ -4,13 +4,13 @@ import Emoji from '../Emoji/Emoji';
 import Switch from '../Switch/Switch';
 import { IntroContact, IntroHeader, IntroTagLine, IntroTitle, SwitchWrapper, Toggler, ContactLink } from './style'
 
-const Intro = () => {
+const Intro = ({ darkMode, setDarkMode }) => {
     return (
         <>
             <SwitchWrapper>
                 <TiWeatherSunny size={21} />
                 <Toggler>
-                    <Switch />
+                    <Switch darkMode={darkMode} setDarkMode={setDarkMode} />
                 </Toggler>
                 <TiWeatherNight size={21} />
             </SwitchWrapper>

@@ -1,4 +1,5 @@
 import styled from 'styled-components'
+import theme from '../../theme'
 
 export const SkillsBox = styled.div`
     display: flex;
@@ -7,7 +8,7 @@ export const SkillsBox = styled.div`
 
 export const SkillLabel = styled.div`
     font-weight: 700;
-    color: #36363c;
+    color: ${() => theme.colors.darkgrey};
     text-transform: uppercase;
 `
 
