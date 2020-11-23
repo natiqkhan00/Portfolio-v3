@@ -38,6 +38,18 @@ export const Section = styled.div`
     display: flex;
     justify-content: center;
     padding: 100px 170px;
+
+    @media (max-width: 480px) {
+        padding: 20px 15px;
+    }
+
+    @media (max-width: 768px) {
+        display: block;
+    }
+
+    @media (max-width: 1024px) {
+        padding: 25px;
+    }
 `
 
 export const SectionTitle = styled.div`
@@ -49,6 +61,15 @@ export const SectionTitle = styled.div`
     text-align: right;
     font-weight: 700;
     letter-spacing: 2px;
+
+    @media (max-width: 768px) {
+        text-align: left;
+        width: auto;
+    }
+
+    @media (max-width: 1024px) {
+        margin-right: 30px;
+    }
 `
 
 export const SectionContent = styled.div`
@@ -56,6 +77,14 @@ export const SectionContent = styled.div`
     font-size: 1rem;
     width: 100%;
     max-width: 650px;
+
+    @media (max-width: 480px) {
+        padding-left: 20px;
+    }
+
+    @media (max-width: 768px) {
+        padding-top: 20px;
+    }
 `
 
 export default GlobalStyle

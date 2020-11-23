@@ -1,6 +1,6 @@
 import React from 'react'
 import { Section, SectionContent, SectionTitle } from '../../globalStyle'
-import { SkillsBox, List, SkillItem, SkillLabel } from './style'
+import { SkillsBox, List, SkillItem, SkillLabel, SkillCategory } from './style'
 
 
 const Skills = () => {
@@ -11,7 +11,7 @@ const Skills = () => {
             </SectionTitle>
             <SectionContent>
                 <SkillsBox>
-                    <div>
+                    <SkillCategory>
                         <SkillLabel>
                             Languages
                         </SkillLabel>
@@ -23,8 +23,8 @@ const Skills = () => {
                             <SkillItem>Python</SkillItem>
                             <SkillItem>SQL</SkillItem>
                         </List>
-                    </div>
-                    <div>
+                    </SkillCategory>
+                    <SkillCategory>
                         <SkillLabel>
                             Frameworks
                         </SkillLabel>
@@ -34,8 +34,8 @@ const Skills = () => {
                             <SkillItem>Node</SkillItem>
                             <SkillItem>Wordpress</SkillItem>
                         </List>
-                    </div>
-                    <div>
+                    </SkillCategory>
+                    <SkillCategory>
                         <SkillLabel>
                             Tools
                         </SkillLabel>
@@ -45,8 +45,8 @@ const Skills = () => {
                             <SkillItem>Chrome DevTools</SkillItem>
                             <SkillItem>Postman</SkillItem>
                         </List>
-                    </div>
-                    <div>
+                    </SkillCategory>
+                    <SkillCategory>
                         <SkillLabel>
                             Design
                         </SkillLabel>
@@ -56,7 +56,7 @@ const Skills = () => {
                             <SkillItem>Adobe Xd</SkillItem>
                             <SkillItem>Photoshop</SkillItem>
                         </List>
-                    </div>
+                    </SkillCategory>
                 </SkillsBox>
             </SectionContent>
         </Section>

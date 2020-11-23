@@ -6,7 +6,7 @@ const theme = {
         darkBackground: "#171c28",
         light: "#e7e7e7",
         grey: "#afafbf",
-        whitish: "#eee",
+        whitish: "#fff",
         selectionTextDark: "#39393b",
         selection: "#ffdc00"
     }

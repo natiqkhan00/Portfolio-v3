@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import { ThemeProvider } from 'styled-components'
+import ScrollAnimation from 'react-animate-on-scroll';
 
 import theme from './theme'
 import { Background, Experience, FeaturedProjects, Footer, Intro, OtherProjects, Skills } from './components'
@@ -15,11 +16,21 @@ const App = () => {
         <ThemeProvider theme={{ ...theme, darkMode }}>
             <GlobalStyle />
             <Intro darkMode={darkMode} setDarkMode={setDarkMode} />
-            <Background />
-            <Skills />
-            <Experience />
-            <FeaturedProjects />
-            <OtherProjects />
+            <ScrollAnimation animateIn="fadeIn">
+                <Background />
+            </ScrollAnimation>
+            <ScrollAnimation animateIn="fadeIn">
+                <Skills />
+            </ScrollAnimation>
+            <ScrollAnimation animateIn="fadeIn">
+                <Experience />
+            </ScrollAnimation>
+            <ScrollAnimation animateIn="fadeIn">
+                <FeaturedProjects />
+            </ScrollAnimation>
+            <ScrollAnimation animateIn="fadeIn">
+                <OtherProjects />
+            </ScrollAnimation>
             <Footer />
         </ThemeProvider >
     )
