@@ -6,7 +6,7 @@ const Background = () => {
     return (
         <Section>
             <SectionTitle>
-                Background
+                About
             </SectionTitle>
             <BgSectionContent>
                 <p>

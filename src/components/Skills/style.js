@@ -8,7 +8,7 @@ export const SkillsBox = styled.div`
 
 export const SkillLabel = styled.div`
     font-weight: 700;
-    color: ${() => theme.colors.darkgrey};
+    color: ${props => props.theme.darkMode ? theme.colors.light : theme.colors.darkgrey};
     text-transform: uppercase;
 `
 

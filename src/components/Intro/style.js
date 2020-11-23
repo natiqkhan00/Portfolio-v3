@@ -44,10 +44,10 @@ export const ContactLink = styled.a`
     padding: 2px 3px;
     text-decoration: none;
     box-shadow: inset 0 -3px 0 ${() => theme.colors.primary};
-    color: ${() => theme.colors.dark};
+    color: ${props => props.theme.darkMode ? theme.colors.light : theme.colors.dark};
 
     &:hover {
         box-shadow: inset 0 -30px 0 ${() => theme.colors.primary};
-        color: #fff;
+        color: ${props => props.theme.darkMode ? theme.colors.light : theme.colors.dark};
     }
 `

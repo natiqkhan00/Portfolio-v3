@@ -2,10 +2,13 @@ import styled, { createGlobalStyle } from "styled-components"
 import theme from "./theme"
 
 const GlobalStyle = createGlobalStyle`
+    @import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;500;700&display=swap');
+    
     * {
         margin: 0;
         padding: 0;
         box-sizing: border-box;
+        font-family: 'Fira Sans', sans-serif;
     }
 
     body {
@@ -13,7 +16,6 @@ const GlobalStyle = createGlobalStyle`
         padding: 0;
         background-color: ${props => props.theme.darkMode ? theme.colors.darkBackground : theme.colors.whitish};
         color: ${props => props.theme.darkMode ? theme.colors.light : theme.colors.dark};
-        font-family: Apercu,"Source Sans Pro",system,system-ui,-apple-system,BlinkMacSystemFont,Roboto,Helvetica,Arial,sans-serif;
         line-height: 1.5;
         width: 100%;
         box-sizing: inherit;
@@ -26,12 +28,9 @@ const GlobalStyle = createGlobalStyle`
         color: inherit;
     }
 
-    ::-moz-selection { /* Code for Firefox */
-        background: #ffdc00;
-    }
-
-        ::selection {
-        background: #ffdc00;
+    ::selection {
+        background: ${theme.colors.selection};
+        color: ${props => props.theme.darkMode && theme.colors.selectionTextDark};
     }
 `
 

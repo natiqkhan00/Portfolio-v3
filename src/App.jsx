@@ -7,9 +7,9 @@ import GlobalStyle from './globalStyle'
 
 const App = () => {
 
-    const [darkMode, setDarkMode] = useState(false)
-
-    console.log("Is Darkmode", darkMode);
+    const d = new Date()
+    const night = d.getHours() >= 19 || d.getHours() <= 7 // between 7pm to 7am
+    const [darkMode, setDarkMode] = useState(night)
 
     return (
         <ThemeProvider theme={{ ...theme, darkMode }}>
