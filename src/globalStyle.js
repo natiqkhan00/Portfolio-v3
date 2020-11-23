@@ -48,7 +48,7 @@ export const Section = styled.div`
     }
 
     @media (max-width: 1024px) {
-        padding: 25px;
+        padding: 50px;
     }
 `
 
@@ -68,7 +68,7 @@ export const SectionTitle = styled.div`
     }
 
     @media (max-width: 1024px) {
-        margin-right: 30px;
+        margin-right: 40px;
     }
 `
 
