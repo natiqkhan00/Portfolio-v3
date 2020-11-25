@@ -1,0 +1,18 @@
+[
+    {
+        "skillLabel": "Languages",
+        "lists": ["Javscript (ES6)", "TypeScript", "HTML", "CSS/Sass", "Python", "SQL"]
+    },
+    {
+        "skillLabel": "Frameworks",
+        "lists": ["Ember & Glimmer", "React", "Node", "Wordpress", "Laravel"]
+    },
+    {
+        "skillLabel": "Tools",
+        "lists": ["Bash", "Git & Github", "Chrome DevTools", "Postman"]
+    },
+    {
+        "skillLabel": "Design",
+        "lists": ["Sketch", "InDesign", "Adobe Xd", "Photoshop", "Figma"]
+    }
+]

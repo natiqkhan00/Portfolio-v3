@@ -1,8 +1,10 @@
 import React from 'react'
 import { TiWeatherSunny, TiWeatherNight } from "react-icons/ti";
+
 import Emoji from '../Emoji/Emoji';
 import Switch from '../Switch/Switch';
 import { IntroContact, IntroHeader, IntroTagLine, IntroTitle, SwitchWrapper, Toggler, ContactLink } from './style'
+import data from './intro.json'
 
 const Intro = ({ darkMode, setDarkMode }) => {
     return (
@@ -17,13 +19,16 @@ const Intro = ({ darkMode, setDarkMode }) => {
 
             <IntroHeader>
                 <IntroTitle>
-                    Hello there! <Emoji symbol="👋" />
+                    {data.title} <Emoji symbol={data.emojiTitle} />
                 </IntroTitle>
                 <IntroTagLine>
-                    I'm Natiq Mumtaz, a design-minded front-end software engineer focused on building beautiful interfaces & experiences
+                    {data.subtitle}
                 </IntroTagLine>
                 <IntroContact>
-                    Get in Touch <Emoji symbol="➡" /> <ContactLink href="mailto:natiq.mumtaz@swisscom.com" target="_blank" rel="noreferrer">natiq.mumtaz@swisscom.com</ContactLink>
+                    {data.linkMsg} <Emoji symbol={data.emojiEmail} /> 
+                    <ContactLink href={`mailto:${data.email}`} target="_blank" rel="noreferrer">
+                        {data.email}
+                    </ContactLink>
                 </IntroContact>
             </IntroHeader>
         </>

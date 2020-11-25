@@ -1,6 +1,8 @@
 import React from 'react'
+
 import { Section, SectionContent, SectionTitle } from '../../globalStyle'
 import { Jobs, Job, CompanyAndTime, Company, Time, Position } from './style'
+import data from './experience.json'
 
 const Experience = () => {
     return (
@@ -10,34 +12,15 @@ const Experience = () => {
             </SectionTitle>
             <SectionContent>
                 <Jobs>
-                    <Job>
-                        <CompanyAndTime>
-                            <Company>Upstatement</Company>
-                            <Time>May 2018 - Present</Time>
-                        </CompanyAndTime>
-                        <Position>Engineer</Position>
-                    </Job>
-                    <Job>
-                        <CompanyAndTime>
-                            <Company>Upstatement</Company>
-                            <Time>May 2018 - Present</Time>
-                        </CompanyAndTime>
-                        <Position>Engineer</Position>
-                    </Job>
-                    <Job>
-                        <CompanyAndTime>
-                            <Company>Upstatement</Company>
-                            <Time>May 2018 - Present</Time>
-                        </CompanyAndTime>
-                        <Position>Engineer</Position>
-                    </Job>
-                    <Job>
-                        <CompanyAndTime>
-                            <Company>Upstatement</Company>
-                            <Time>May 2018 - Present</Time>
-                        </CompanyAndTime>
-                        <Position>Engineer</Position>
-                    </Job>
+                    {data.map((job, i) => (
+                        <Job key={i}>
+                            <CompanyAndTime>
+                                <Company>{job.company}</Company>
+                                <Time>{job.time}</Time>
+                            </CompanyAndTime>
+                            <Position>{job.position}</Position>
+                        </Job>
+                    ))}
                 </Jobs>
             </SectionContent>
         </Section>

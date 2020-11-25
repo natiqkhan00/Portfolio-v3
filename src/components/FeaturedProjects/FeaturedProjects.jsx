@@ -1,6 +1,8 @@
 import React from 'react'
+
 import { Section, SectionTitle, SectionContent } from '../../globalStyle'
 import { Caption, Project, ProjectImage, ProjectName } from './style'
+import data from './featuredProjects.json'
 
 const FeaturedProjects = () => {
     return (
@@ -9,32 +11,21 @@ const FeaturedProjects = () => {
                 Featured Projects
             </SectionTitle>
             <SectionContent>
-                <Project>
-                    <ProjectImage>
-                        <a href="https://www.google.com" target="_blank" rel="noreferrer">
-                            <img src="https://bchiang7.github.io/img/featured/blistabloc/blistabloc.png" alt="Google" />
-                        </a>
-                    </ProjectImage>
-                    <Caption>
-                        <ProjectName>
-                            <a href="https://www.google.com" target="_blank" rel="noreferrer">Google</a>
-                        </ProjectName>
-                        <p>Custom wordpress theme built with Timber and Woocommerce for blistabloc, the only reactive shoe insert that prevents blisters from forming.</p>
-                    </Caption>
-                </Project>
-                <Project>
-                    <ProjectImage>
-                        <a href="https://www.google.com" target="_blank" rel="noreferrer">
-                            <img src="https://bchiang7.github.io/img/featured/blistabloc/blistabloc.png" alt="Google" />
-                        </a>
-                    </ProjectImage>
-                    <Caption>
-                        <ProjectName>
-                            <a href="https://www.google.com" target="_blank" rel="noreferrer">Google</a>
-                        </ProjectName>
-                        <p>Custom wordpress theme built with Timber and Woocommerce for blistabloc, the only reactive shoe insert that prevents blisters from forming.</p>
-                    </Caption>
-                </Project>
+                {data.map((project, i) => (
+                    <Project key={i}>
+                        <ProjectImage>
+                            <a href={project.link} target="_blank" rel="noreferrer">
+                                <img src={project.image} alt={project.title} />
+                            </a>
+                        </ProjectImage>
+                        <Caption>
+                            <ProjectName>
+                                <a href={project.link}  target="_blank" rel="noreferrer">{project.name}</a>
+                            </ProjectName>
+                            <p>{project.description}</p>
+                        </Caption>
+                    </Project>
+                ))}
             </SectionContent>
         </Section>
     )
