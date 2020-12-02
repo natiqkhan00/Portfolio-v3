@@ -2,7 +2,7 @@ import React from 'react'
 import { AiOutlineMail, AiOutlineGithub, AiFillFacebook, AiFillInstagram, AiFillLinkedin, AiFillTwitterSquare } from "react-icons/ai";
 
 import { Container, CopyRight, SocialLinks } from './style'
-import data from './footer.json'
+import data from './data.json'
 
 const Components = {
     AiOutlineMail,

@@ -2,7 +2,7 @@ import React from 'react'
 
 import { Section, SectionContent, SectionTitle } from '../../globalStyle'
 import { SkillsBox, List, SkillItem, SkillLabel, SkillCategory } from './style'
-import data from './skills.json'
+import data from './data.json'
 
 
 const Skills = () => {

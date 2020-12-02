@@ -2,13 +2,12 @@ import styled, { createGlobalStyle } from "styled-components"
 import theme from "./theme"
 
 const GlobalStyle = createGlobalStyle`
-    @import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;500;700&display=swap');
     
     * {
         margin: 0;
         padding: 0;
         box-sizing: border-box;
-        font-family: 'Fira Sans', sans-serif;
+        font-family: 'Montserrat', sans-serif;
     }
 
     body {

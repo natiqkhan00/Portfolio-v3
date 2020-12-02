@@ -3,7 +3,7 @@ import React from 'react'
 import Emoji from '../Emoji/Emoji'
 import { Section, SectionTitle, SectionContent } from './../../globalStyle'
 import { OthProject, OthProjectName, ProjectTag } from './style'
-import data from './otherProjects.json'
+import data from './data.json'
 
 const OtherProjects = () => {
     return (

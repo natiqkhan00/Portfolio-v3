@@ -2,7 +2,8 @@ import React from 'react'
 
 import { Section, SectionTitle, SectionContent } from '../../globalStyle'
 import { Caption, Project, ProjectImage, ProjectName } from './style'
-import data from './featuredProjects.json'
+import data from './data'
+
 
 const FeaturedProjects = () => {
     return (

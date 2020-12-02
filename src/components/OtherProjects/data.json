@@ -1,0 +1,30 @@
+[
+    {
+        "name": "COVID-19 Tracker",
+        "description": "Corona Virus is, unfortunately, spreading through the entire world. What can we, as developers, do to make the situation better? We can help to spread awareness by visualizing the data. The data is fetched from the API and we'll create cards displaying the statistics as well as Charts.",
+        "link": "https://coronai.herokuapp.com",
+        "emoji": "👉",
+        "tags": ["React", "Material UI", "CSS", "Charts.js"]
+    },
+    {
+        "name": "Weather Widget",
+        "description": "A simple weather app that I made with React and Heroku. I used the OpenWeatherMap API to get weather and forecast data.",
+        "link": "https://weathiy.herokuapp.com/",
+        "emoji": "👉",
+        "tags": ["React", "Styled Components", "Heroku", "OpenWeatherMap API"]
+    },
+    {
+        "name": "Nati's Blog",
+        "description": "A minimal blog web app that I made with Nodejs, Express, MongoDB and Ejs. This app allows you to post daily blogs.",
+        "link": "https://bloogiy.herokuapp.com/",
+        "emoji": "👉",
+        "tags": ["NodeJS", "React", "MongoDB", "Express"]
+    },
+    {
+        "name": "Personal Protfolio V1",
+        "description": "My first portfolio website I designed and built in 2018. I learned quite a bit about HTML, CSS, and JS. Since then, I taught myself Javascript, HTMl and CSS",
+        "link": "#",
+        "emoji": "👉",
+        "tags": ["JavaScript", "HTML", "CSS"]
+    }
+]

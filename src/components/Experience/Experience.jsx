@@ -2,7 +2,7 @@ import React from 'react'
 
 import { Section, SectionContent, SectionTitle } from '../../globalStyle'
 import { Jobs, Job, CompanyAndTime, Company, Time, Position } from './style'
-import data from './experience.json'
+import data from './data.json'
 
 const Experience = () => {
     return (

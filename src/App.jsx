@@ -20,10 +20,10 @@ const App = () => {
                 <Background />
             </ScrollAnimation>
             <ScrollAnimation animateIn="fadeIn">
-                <Skills />
+                <Experience />
             </ScrollAnimation>
             <ScrollAnimation animateIn="fadeIn">
-                <Experience />
+                <Skills />
             </ScrollAnimation>
             <ScrollAnimation animateIn="fadeIn">
                 <FeaturedProjects />

@@ -1,0 +1,29 @@
+{
+    "copyright": "Natiq Mumtaz 👨‍⚖️ 2020",
+    "links": [
+        {
+            "link": "mailto:natiqkhan00@gmail.com",
+            "component": "AiOutlineMail"
+        },
+        {
+            "link": "https://www.linkedin.com/in/natiq-mumtaz-0a9b6917a/",
+            "component": "AiFillLinkedin"
+        },
+        {
+            "link": "https://github.com/natiqkhan00",
+            "component": "AiOutlineGithub"
+        },
+        {
+            "link": "https://twitter.com/natiqkhan00",
+            "component": "AiFillTwitterSquare"
+        },
+        {
+            "link": "https://www.facebook.com/natiqkhan00",
+            "component": "AiFillFacebook"
+        },
+        {
+            "link": "https://www.instagram.com/imnatiq/",
+            "component": "AiFillInstagram"
+        }
+    ]
+}

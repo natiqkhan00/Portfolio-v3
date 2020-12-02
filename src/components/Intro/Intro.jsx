@@ -4,7 +4,7 @@ import { TiWeatherSunny, TiWeatherNight } from "react-icons/ti";
 import Emoji from '../Emoji/Emoji';
 import Switch from '../Switch/Switch';
 import { IntroContact, IntroHeader, IntroTagLine, IntroTitle, SwitchWrapper, Toggler, ContactLink } from './style'
-import data from './intro.json'
+import data from './data.json'
 
 const Intro = ({ darkMode, setDarkMode }) => {
     return (
@@ -22,7 +22,7 @@ const Intro = ({ darkMode, setDarkMode }) => {
                     {data.title} <Emoji symbol={data.emojiTitle} />
                 </IntroTitle>
                 <IntroTagLine>
-                    {data.subtitle}
+                    {data.subtitle} <Emoji symbol="🧑‍💻" />
                 </IntroTagLine>
                 <IntroContact>
                     {data.linkMsg} <Emoji symbol={data.emojiEmail} /> 
