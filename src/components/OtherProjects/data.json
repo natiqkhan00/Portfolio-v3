@@ -21,6 +21,13 @@
         "tags": ["NodeJS", "React", "MongoDB", "Express"]
     },
     {
+        "name": "Crudy",
+        "description": "A CRUD web application for learing NodeJS, Express and Ejs Template Engine.",
+        "link": "https://crudy.herokuapp.com/",
+        "emoji": "👉",
+        "tags": ["NodeJS", "EJS", "MongoDB", "Express"]
+    },
+    {
         "name": "Personal Protfolio V1",
         "description": "My first portfolio website I designed and built in 2018. I learned quite a bit about HTML, CSS, and JS. Since then, I taught myself Javascript, HTMl and CSS",
         "link": "#",
