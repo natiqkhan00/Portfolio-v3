@@ -6,6 +6,8 @@ export const SwitchWrapper = styled.div`
     position: absolute;
     top: 20px;
     right: 30px;
+    position: fixed;
+    z-index: 10;
 
     @media (max-width: 480px) {
         top: 10px;
